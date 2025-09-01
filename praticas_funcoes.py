@@ -106,43 +106,50 @@
 # print(resultado)
 
 #Exercícios
-# def maior_num(*numero):
+#01 - Crie uma função que recebe um número, e faz um contador regressivo a partir dele. 
 
-
-
-
-
-
-
-# def somar(n1, n2):
-#     soma = n1 + n2
-#     return soma
-
-# n1 = int(input('Digite um número: '))
-# n2 = int(input("Digite outro número: "))
-
-# resultado = somar(n1, n2)
-# print(f"O resultado da soma entre {n1} e {n2} é igual a {resultado}.")
-
-# def somar(n1, n2):
-#     soma = n1 + n2
-#     print(f"O resultado da soma entre {n1} e {n2} é igual a {soma}")
-
-# somar(int(input("Digite um número: ")), int(input("Digite outro número: ")))
-
-# def verific_par(numero):
-#     if numero % 2 == 0:
-#         print(f"{numero} é par!")
-#     else:
-#         print(f"{numero} é ímpar!")
-
-# verific_par(5)
-
-def verific_par(numero):
-    if numero % 2 == 0:
-        return True
-    else:
-        return False
+# def contagem_regressiva(numero):
     
-verificacao = verific_par(4)
-print(verificacao)
+#     for n in range(numero, -1, -1):
+#         print(n)
+
+# numero = int(input("Defina de onde você deseja que inicie a contagem: "))
+
+# contagem_regressiva(numero)
+
+
+#agora usando return
+
+# def contagem_regressiva(numero):
+#     contagem = []
+
+#     for n in range(numero, -1, -1):
+#         contagem.append(n)
+
+#     return contagem
+
+# numero = int(input("Defina de onde você deseja que a contagem regressiva comece: "))
+# resultado = contagem_regressiva(numero)
+
+# for n in resultado:
+#     print(n)
+
+#02 - Crie uma função que recebe uma lista e retorne o maior número dessa lista.
+
+# def maior_num_lista(*numeros):
+#     maior_num = numeros[0]
+
+#     for n in numeros:
+
+#         if n > maior_num:
+#             maior_num = n
+#     print(numeros)
+#     return maior_num
+    
+# resultado = maior_num_lista(6, 5, 3, 7, 11, 9)
+# print(f"O maior número dessa lista é {resultado}.")
+
+# numero = 30
+# for n in range(10, -1, -1):
+#     print(n)
+    
